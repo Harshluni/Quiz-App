@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Quiz Master</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="quiz-box">
+
+        <h1>Quiz Master</h1>
+
+        <p class="subtitle">Test your knowledge</p>
+
+        <div class="quiz-info">
+
+            <span id="question-number">Question 1 of 5</span>
+
+            <span id="score">Score: 0</span>
+
+        </div>
+
+
+        <h2 id="question">
+            What does HTML stand for?
+        </h2>
+
+
+        <button id="option1" onclick="checkAnswer(1)">
+            Hyper Text Markup Language
+        </button>
+
+        <button id="option2" onclick="checkAnswer(2)">
+            High Text Machine Language
+        </button>
+
+        <button id="option3" onclick="checkAnswer(3)">
+            Hyper Tool Management Language
+        </button>
+
+        <button id="option4" onclick="checkAnswer(4)">
+            Home Text Markup Language
+        </button>
+
+
+        <p id="result"></p>
+
+
+        <button id="next-button" onclick="nextQuestion()">
+            Next Question
+        </button>
+
+
+        <div id="final-result">
+
+            <h2>Quiz Completed!</h2>
+
+            <p id="final-score"></p>
+
+            <button onclick="restartQuiz()">
+                Restart Quiz
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
